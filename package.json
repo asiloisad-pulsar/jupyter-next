@@ -1,7 +1,7 @@
 {
   "name": "jupyter-next",
   "description": "Open and edit Jupyter notebooks",
-  "repository": "https://github.com/asiloisad/pulsar-jupyter-next",
+  "repository": "https://github.com/asiloisad-pulsar/jupyter-next",
   "keywords": [
     "jupyter",
     "notebook",

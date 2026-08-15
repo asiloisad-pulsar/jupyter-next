@@ -2,7 +2,7 @@
 
 Open and edit Jupyter notebooks in Pulsar.
 
-![demo](https://github.com/asiloisad/pulsar-jupyter-next/blob/master/assets/demo.png?raw=true)
+![demo](https://github.com/asiloisad-pulsar/jupyter-next/blob/master/assets/demo.png?raw=true)
 
 ## Features
 
@@ -16,8 +16,8 @@ Open and edit Jupyter notebooks in Pulsar.
 - **Undo/redo**: Buffer-based notebook edit history for cell text and notebook operations.
 - **Open source**: Open `.ipynb` files as plain JSON text from an active notebook or tree-view.
 - **Dual mode**: Command mode for navigation, edit mode for typing.
-- **Notebook search**: Search and replace cell source through [search-panel](https://github.com/asiloisad/pulsar-search-panel). Find Next/Previous enters edit mode, focuses the matching cell editor, and selects the current match.
-- **Hydrogen execution**: Run cells with [hydrogen-next](https://github.com/asiloisad/pulsar-hydrogen-next) via the `hydrogen-adapter` service. Run/interrupt/restart/shutdown buttons appear in the toolbar; each code cell shows a per-cell Run button.
+- **Notebook search**: Search and replace cell source through [search-panel](https://github.com/asiloisad-pulsar/search-panel). Find Next/Previous enters edit mode, focuses the matching cell editor, and selects the current match.
+- **Hydrogen execution**: Run cells with [hydrogen-next](https://github.com/asiloisad-pulsar/hydrogen-next) via the `hydrogen-adapter` service. Run/interrupt/restart/shutdown buttons appear in the toolbar; each code cell shows a per-cell Run button.
 - **Execution status**: Running cells pulse a warning border and show a marching diagonal hatch on the gutter. The execution count switches to `[*]` while running. Each cell's gutter shows the last completed run duration.
 - **Output protection**: Output images cannot be dragged out of the notebook.
 - **Linting support**: Code cells are exposed through a backing `.ipynb` editor for linter integrations.
@@ -79,7 +79,7 @@ Tree-view commands:
 
 ## Provided Service `search-adapter`
 
-Allows [search-panel](https://github.com/asiloisad/pulsar-search-panel) to search and replace cell source in the active notebook through the buffer find panel:
+Allows [search-panel](https://github.com/asiloisad-pulsar/search-panel) to search and replace cell source in the active notebook through the buffer find panel:
 
 - `search-panel:show`, `search-panel:find-next`, `search-panel:find-previous`, `search-panel:replace-current`, and `search-panel:replace-all` operate on notebook cell source while the notebook is the active pane item.
 - Search scans all cells and reports the total match count in the find panel.
@@ -110,13 +110,13 @@ In your `package.json`:
 
 ## Provided Service `hydrogen-adapter`
 
-Allows [hydrogen-next](https://github.com/asiloisad/pulsar-hydrogen-next) to execute notebook cells using normal Hydrogen commands. The adapter maps notebook cells to run targets, supplies source text and metadata, routes kernel output back into cells, stores execution counts, and controls kernel-related focus/navigation.
+Allows [hydrogen-next](https://github.com/asiloisad-pulsar/hydrogen-next) to execute notebook cells using normal Hydrogen commands. The adapter maps notebook cells to run targets, supplies source text and metadata, routes kernel output back into cells, stores execution counts, and controls kernel-related focus/navigation.
 
 This service is provided as `hydrogen-adapter@1.0.0` through `provideHydrogenAdapter`.
 
 ## Provided Service `linter-adapter`
 
-Allows [linter-bundle](https://github.com/asiloisad/pulsar-linter-bundle) to map diagnostics from the notebook backing editor to visible notebook cells. The adapter resolves messages for notebook items, finds the current/next/previous message, and reveals the corresponding cell editor location.
+Allows [linter-bundle](https://github.com/asiloisad-pulsar/linter-bundle) to map diagnostics from the notebook backing editor to visible notebook cells. The adapter resolves messages for notebook items, finds the current/next/previous message, and reveals the corresponding cell editor location.
 
 This service is provided as `linter-adapter@1.0.0` through `provideLinterItemAdapter`.
 
@@ -128,7 +128,7 @@ This service is provided as `linter-ui@1.0.0` through `provideLinterUI`.
 
 ## Provided Service `navigation-adapter`
 
-Allows [navigation-panel](https://github.com/asiloisad/pulsar-navigation-panel) to show notebook markdown headings as a document outline. Selecting a heading activates the corresponding cell and scrolls it into view.
+Allows [navigation-panel](https://github.com/asiloisad-pulsar/navigation-panel) to show notebook markdown headings as a document outline. Selecting a heading activates the corresponding cell and scrolls it into view.
 
 This service is provided as `navigation-adapter@1.0.0` through `provideNavigationAdapter`.
 
@@ -138,7 +138,7 @@ Adds tree-view commands for opening selected `.ipynb` files as notebooks or as p
 
 ## Consumed Service `simplemap`
 
-Allows notebook scrollmap markers to render in a standalone scrollbar widget when [scrollmap](https://github.com/asiloisad/pulsar-scrollmap) is available.
+Allows notebook scrollmap markers to render in a standalone scrollbar widget when [scrollmap](https://github.com/asiloisad-pulsar/scrollmap) is available.
 
 ## Contributing
 
