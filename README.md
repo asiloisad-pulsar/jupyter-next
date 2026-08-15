@@ -27,7 +27,7 @@ Open and edit Jupyter notebooks in Pulsar.
 
 ## Installation
 
-Install `jupyter-next` from Pulsar's package installer or run `ppm install jupyter-next`.
+To install `jupyter-next` search for [jupyter-next](https://web.pulsar-edit.dev/packages/jupyter-next) in the Install pane of the Pulsar settings or run `ppm install jupyter-next`. Alternatively, you can run `ppm install asiloisad-pulsar/jupyter-next` to install a package directly from the GitHub repository.
 
 ## Commands
 
