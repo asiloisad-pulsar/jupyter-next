@@ -2,6 +2,9 @@
 
 Open and edit Jupyter notebooks in Pulsar.
 
+> [!NOTE]
+> This package is in maintenance mode. If you use [Lumine](https://github.com/lumine-code/lumine), you may be interested in [jupyter-view](https://github.com/lumine-code/jupyter-view) and [jupyter-repl](https://github.com/lumine-code/jupyter-repl).
+
 ![demo](https://github.com/asiloisad-pulsar/jupyter-next/blob/master/assets/demo.png?raw=true)
 
 ## Features
